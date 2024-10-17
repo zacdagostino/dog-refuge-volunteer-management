@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Register resource routes for the CarerController
+Route::resource('carers', CarerController::class);
